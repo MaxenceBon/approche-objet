@@ -1,10 +1,9 @@
 package entites2;
 
+import entites.AdressePostale;
+
 public class Personne {
 	public String nom;
 	public String prenom;
-	public int numeroRue;
-	public String libelleRue;
-	public int codePostal;
-	public String ville;
+	public AdressePostale adresse;
 }

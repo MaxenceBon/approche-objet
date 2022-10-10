@@ -9,18 +9,19 @@ public class TestPersonne {
 		Personne personne1 = new Personne();
 		personne1.nom="Doe";
 		personne1.prenom="John";
-		personne1.numeroRue=2;
-		personne1.libelleRue="premier chemin";
-		personne1.codePostal=44001;
-		personne1.ville="Nantes";
+		personne1.adresse = new AdressePostale();
+		personne1.adresse.numeroRue=2;
+		personne1.adresse.libelleRue="premier chemin";
+		personne1.adresse.codePostal=44001;
+		personne1.adresse.ville="Nantes";
 		
 		Personne personne2 = new Personne();
 		personne2.nom="Loe";
 		personne2.prenom="Jane";
-		personne2.numeroRue=4;
-		personne2.libelleRue="deuxieme chemin";
-		personne2.codePostal=44002;
-		personne2.ville="Nantes";
+		personne2.adresse.numeroRue=4;
+		personne2.adresse.libelleRue="deuxieme chemin";
+		personne2.adresse.codePostal=44002;
+		personne2.adresse.ville="Nantes";
 	}
 
 }
