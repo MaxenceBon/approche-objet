@@ -4,17 +4,10 @@ public class TestAdressePostale {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		AdressePostale adr1 = new AdressePostale();
-		adr1.numeroRue=2;
-		adr1.libelleRue="premier chemin";
-		adr1.codePostal=44001;
-		adr1.ville="Nantes";
-		
-		AdressePostale adr2 = new AdressePostale();
-		adr2.numeroRue=4;
-		adr2.libelleRue="deuxieme chemin";
-		adr2.codePostal=44002;
-		adr2.ville="Nantes";
+		AdressePostale adr1 = new AdressePostale(2,"premier chemin", 44001, "Nantes");
+		AdressePostale adr2 = new AdressePostale(4, "deuxieme chemin", 44002, "Nantes");
+		System.out.println(adr1.libelleRue);
+		System.out.println(adr2.codePostal);
 	}
-
+ 
 }

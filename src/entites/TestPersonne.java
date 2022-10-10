@@ -6,22 +6,10 @@ public class TestPersonne {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Personne personne1 = new Personne();
-		personne1.nom="Doe";
-		personne1.prenom="John";
-		personne1.adresse = new AdressePostale();
-		personne1.adresse.numeroRue=2;
-		personne1.adresse.libelleRue="premier chemin";
-		personne1.adresse.codePostal=44001;
-		personne1.adresse.ville="Nantes";
+		Personne personne1 = new Personne("Doe","John",new AdressePostale(2,"premier chemin",44001,"Nantes"));
 		
-		Personne personne2 = new Personne();
-		personne2.nom="Loe";
-		personne2.prenom="Jane";
-		personne2.adresse.numeroRue=4;
-		personne2.adresse.libelleRue="deuxieme chemin";
-		personne2.adresse.codePostal=44002;
-		personne2.adresse.ville="Nantes";
+		AdressePostale adr2  = new AdressePostale(4,"deuxieme chemin",44002,"Nantes");
+		Personne personne2 = new Personne("Loe","Jane", adr2);
 	}
 
 }
