@@ -2,10 +2,12 @@ package entites;
 
 public class AdressePostale {
 
-	public int numeroRue;
-	public String libelleRue;
-	public int codePostal;
-	public String ville;
+	private int numeroRue;
+	private String libelleRue;
+	private int codePostal;
+	private String ville;
+	
+	static String pays = "FRANCE"; //variable de classe, partagée pour tous, si changée -> change pour TOUS
 
 	public AdressePostale(int nvNumeroRue, String nvLibelleRue, int nvCodePostal, String nvVille) {
 		numeroRue = nvNumeroRue;
@@ -13,4 +15,38 @@ public class AdressePostale {
 		codePostal = nvCodePostal;
 		ville = nvVille;
 	}
+
+	public int getNumeroRue() {
+		return numeroRue;
+	}
+
+	public void setNumeroRue(int numeroRue) {
+		this.numeroRue = numeroRue;
+	}
+
+	public String getLibelleRue() {
+		return libelleRue;
+	}
+
+	public void setLibelleRue(String libelleRue) {
+		this.libelleRue = libelleRue;
+	}
+
+	public int getCodePostal() {
+		return codePostal;
+	}
+
+	public void setCodePostal(int codePostal) {
+		this.codePostal = codePostal;
+	}
+
+	public String getVille() {
+		return ville;
+	}
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+	
+	
 }
