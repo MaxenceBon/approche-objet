@@ -2,9 +2,9 @@ package fr.diginamic.banque.entites;
 
 public class CompteTaux extends Compte {
 
-	private String tauxRemuneration;
+	private int tauxRemuneration;
 
-	public CompteTaux(String numeroCompte, float soldeCompte, String tauxRemuneration) {
+	public CompteTaux(String numeroCompte, float soldeCompte, int tauxRemuneration) {
 		super(numeroCompte, soldeCompte);
 		this.tauxRemuneration = tauxRemuneration;
 		// TODO Auto-generated constructor stub
@@ -12,14 +12,14 @@ public class CompteTaux extends Compte {
 
 	public String toString() {
 		String compteOrigine = super.toString();
-		return compteOrigine + " " + tauxRemuneration;
+		return compteOrigine + ", taux de rémuneration : " + tauxRemuneration+"%";
 	}
 
-	public String getTauxRemuneration() {
+	public int getTauxRemuneration() {
 		return tauxRemuneration;
 	}
 
-	public void setTauxRemuneration(String tauxRemuneration) {
+	public void setTauxRemuneration(int tauxRemuneration) {
 		this.tauxRemuneration = tauxRemuneration;
 	}
 }
