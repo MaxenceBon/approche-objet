@@ -4,9 +4,17 @@ public class TestBanque {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		CompteTaux compte1 = new CompteTaux("16B56S445", 200.45f, "3%");
+		Compte compteNormal1 = new Compte("16B56S445", 200.45f);
+		CompteTaux compteTaux1 = new CompteTaux("16B56S445", 200.45f, "3%");
 
-		System.out.println(compte1.toString());
+		System.out.println(compteTaux1.toString());
+		
+		String[] tableauCompte = new String[2];
+		tableauCompte[0]=compteNormal1.toString();
+		tableauCompte[1]=compteTaux1.toString();
+		
+		for(int i = 0 ; i < tableauCompte.length ; i++) {
+			System.out.println(tableauCompte[i]);
+		}
 	}
-
 }
