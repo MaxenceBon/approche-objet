@@ -24,7 +24,6 @@ public class Personne {
 		System.out.println(prenom+" "+nom.toUpperCase());
 		}
 
-	
 	public Personne(String nvNom, String nvPrenom) {
 		this.nom = nvNom;
 		this.prenom = nvPrenom;

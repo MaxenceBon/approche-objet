@@ -17,7 +17,6 @@ public class TestPersonne {
 		AdressePostale adr3 = new AdressePostale(7, "rue", 44007, "NaNtEs");
 		
 		AdressePostale.pays = "Belgique"; //change pays pour TOUS
-		adr2.pays = "Allemagne"; //
 		System.out.println(AdressePostale.pays);
 
 		personne1.afficherIdentite();

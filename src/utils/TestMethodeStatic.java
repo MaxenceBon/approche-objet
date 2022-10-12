@@ -1,7 +1,5 @@
 package utils;
 
-import java.security.PublicKey;
-
 public class TestMethodeStatic {
 
 	public static void main(String[] args) {
