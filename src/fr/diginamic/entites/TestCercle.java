@@ -1,4 +1,4 @@
-package fr.diginamic.banque.entites;
+package fr.diginamic.entites;
 
 import fr.diginamic.utils.CercleFactory;
 

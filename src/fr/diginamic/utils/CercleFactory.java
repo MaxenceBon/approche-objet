@@ -1,6 +1,6 @@
 package fr.diginamic.utils;
 
-import fr.diginamic.banque.entites.Cercle;
+import fr.diginamic.entites.Cercle;
 
 public class CercleFactory {
 	public static Cercle factoryCercle(double rayon) {
