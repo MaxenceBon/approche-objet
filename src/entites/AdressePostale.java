@@ -9,11 +9,11 @@ public class AdressePostale {
 	
 	static String pays = "FRANCE"; //variable de classe, partagée pour tous, si changée -> change pour TOUS
 
-	public AdressePostale(int nvNumeroRue, String nvLibelleRue, int nvCodePostal, String nvVille) {
-		numeroRue = nvNumeroRue;
-		libelleRue = nvLibelleRue;
-		codePostal = nvCodePostal;
-		ville = nvVille;
+	public AdressePostale(int numeroRue, String libelleRue, int codePostal, String ville) {
+		this.numeroRue = numeroRue;
+		this.libelleRue = libelleRue;
+		this.codePostal = codePostal;
+		this.ville = ville;
 	}
 
 	public int getNumeroRue() {
