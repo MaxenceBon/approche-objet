@@ -26,7 +26,8 @@ public class Theatre {
 	@Override
 	public String toString() {
 		return "Nom du theatre = "+nom+", Capacité maximal = "+capaciteMax+", nombre de clients = "+totalClients+", recette = "+recette;
-		}
+	}
+	
 	public String getNom() {
 		return nom;
 	}
