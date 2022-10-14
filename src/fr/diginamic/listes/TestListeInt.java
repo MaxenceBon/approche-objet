@@ -20,11 +20,11 @@ public class TestListeInt {
 		System.out.println(entiers);
 		System.out.println(entiers.size());
 		System.out.println(Collections.max(entiers));
-		
+
 		entiers.remove(Collections.min(entiers));
-		
-		for (int i=0; i < entiers.size(); i++) {
-			if (entiers.get(i)<0) {
+
+		for (int i = 0; i < entiers.size(); i++) {
+			if (entiers.get(i) < 0) {
 				entiers.set(i, entiers.get(i)*(-1));
 			}
 		}
