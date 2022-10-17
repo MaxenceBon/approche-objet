@@ -14,12 +14,22 @@ public class Ville implements Comparable<Ville>{
 		return "Ville : " + nom + ", nombre d'habitants : " + nbHabitants;
 	}
 	
-	@Override
+//	@Override
+//	public int compareTo(Ville autre) {
+//		int result = this.nom.compareTo(autre.getNom());
+//		return result;
+//	}
+	
 	public int compareTo(Ville autre) {
-		int result = this.nom.compareTo(autre.getNom());
-		return result;
+		if (this.getNbHabitants() > autre.getNbHabitants()) {
+			return 1;
+		}
+		else if (this.getNbHabitants() > autre.getNbHabitants()) {
+		return -1;
+		}
+		return 0;
 	}
-
+	
 	public String getNom() {
 		return nom;
 	}
