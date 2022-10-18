@@ -37,6 +37,7 @@ public class TestVille{
 		for (Ville ville : villes) {
 			System.out.println(ville);
 		}
+		
 
 		for (int i = 0; i < villes.size(); i++) {
 			if (villes.get(i).getNbHabitants() > plusGrand) {

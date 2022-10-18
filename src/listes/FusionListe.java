@@ -16,10 +16,8 @@ public class FusionListe {
 		liste2.add("Orange");
 
 		ArrayList<String> liste3 = new ArrayList<String>();
-		for (int i = 0; i < liste1.size(); i++) {
-			liste3.add(liste1.get(i));
-			liste3.add(liste2.get(i));
-		}
+		liste3.addAll(liste1);
+		liste3.addAll(liste2);
 
 		System.out.println(liste3);
 	}

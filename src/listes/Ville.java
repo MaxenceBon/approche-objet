@@ -11,7 +11,7 @@ public class Ville implements Comparable<Ville>{
 	}
 
 	public String toString() {
-		return "Ville : " + nom + ", nombre d'habitants : " + nbHabitants;
+		return " Ville : " + nom + ", nombre d'habitants : " + nbHabitants;
 	}
 	
 //	@Override
