@@ -29,7 +29,6 @@ public class CreationETManipulationMap {
 			System.out.println(valeur);
 		}
 		
-
 		System.out.println(mapVilles.size());
 
 	}
