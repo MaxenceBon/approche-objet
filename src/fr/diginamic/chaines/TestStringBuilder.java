@@ -20,8 +20,8 @@ public class TestStringBuilder {
 		long debut1 = System.currentTimeMillis();
 		
 		String builder1="";
-		for (int i = 1; i<=100000; i++) {
-			builder1 = builder1+String.valueOf(i);
+		for (int i = 1; i<=200000; i++) {
+			builder1 += i;
 		}
 
 		long fin1 = System.currentTimeMillis();
