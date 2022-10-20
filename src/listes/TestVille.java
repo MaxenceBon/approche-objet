@@ -16,7 +16,8 @@ public class TestVille{
 		String villePlusGrande="";
 		
 		Ville ville1 = new Ville("Nice", 343000);
-		Ville ville2 = new Ville("Carcassonne", 47800);
+		Ville ville2 = new Ville("Nice", 343000);
+//		Ville ville2 = new Ville("Carcassonne", 47800);
 		Ville ville3 = new Ville("Narbonne", 53400);
 		Ville ville4 = new Ville("Lyon", 484000);
 		Ville ville5 = new Ville("Foix", 9700);
@@ -97,5 +98,8 @@ public class TestVille{
 		for (Ville ville : villes) {
 			System.out.println(ville);
 		}
+		
+		boolean test1 = ville1.equals(ville2);
+		System.out.println(test1);
 	}
 }
