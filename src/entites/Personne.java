@@ -1,12 +1,10 @@
-package entites2;
-
-import entites.AdressePostale;
+package entites;
 
 public class Personne {
 
-	public String nom;
-	public String prenom;
-	public AdressePostale adressePostale;
+	private String nom;
+	private String prenom;
+	private AdressePostale adressePostale;
 
 	public String modifNom(String nom) {
 		return nom.toUpperCase();
@@ -40,7 +38,11 @@ public class Personne {
 	}
 
 	public String getNom() {
-		return nom;
+		return nom.toUpperCase();
+	}
+	
+	public String adressePersonne() {
+		return "habite au : "+getAdressePostale().getNumeroRue()+" "+getAdressePostale().getLibelleRue()+", "+getAdressePostale().getCodePostal()+" "+getAdressePostale().getVille();
 	}
 
 	public void setNom(String nom) {

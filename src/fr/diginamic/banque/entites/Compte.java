@@ -2,8 +2,8 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 
-	protected String numeroCompte;
-	protected float soldeCompte;
+	private String numeroCompte;
+	private float soldeCompte;
 
 	public Compte(String numeroCompte, float soldeCompte) {
 		this.numeroCompte = numeroCompte;

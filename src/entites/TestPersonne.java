@@ -1,7 +1,5 @@
 package entites;
 
-import entites2.Personne;
-
 public class TestPersonne {
 
 	public static String prenom;
@@ -34,19 +32,18 @@ public class TestPersonne {
 		String prenom = personne2.getPrenom();
 		System.out.println(prenom);
 
-		int adressePersonne1 = personne1.adressePostale.getCodePostal();
+		int adressePersonne1 = personne1.getAdressePostale().getCodePostal();
 		System.out.println(adressePersonne1);
 	
-		String adressePersonne2 = personne2.adressePostale.getVille();
+		String adressePersonne2 = personne2.getAdressePostale().getVille();
 		System.out.println(adressePersonne2);
 		
-
-		
-		int numeroRuePersonne1 = personne1.adressePostale.getNumeroRue();
-		String libelleRuePersonne1 = personne1.adressePostale.getLibelleRue();
-		int codePostalPersonne1 = personne1.adressePostale.getCodePostal();
-		String villePersonne1 = personne1.adressePostale.getVille();
-		String adresseCompletePersonne1 = "habite au :"+numeroRuePersonne1+" "+libelleRuePersonne1+", "+codePostalPersonne1+" "+villePersonne1;
-		System.out.println(adresseCompletePersonne1);
+//		int numeroRuePersonne1 = personne1.getAdressePostale().getNumeroRue();
+//		String libelleRuePersonne1 = personne1.getAdressePostale().getLibelleRue();
+//		int codePostalPersonne1 = personne1.getAdressePostale().getCodePostal();
+//		String villePersonne1 = personne1.getAdressePostale().getVille();
+//		String adresseCompletePersonne1 = "habite au :"+numeroRuePersonne1+" "+libelleRuePersonne1+", "+codePostalPersonne1+" "+villePersonne1;
+//		System.out.println(adresseCompletePersonne1);
+		System.out.println(personne1.adressePersonne());
 	}
 }
