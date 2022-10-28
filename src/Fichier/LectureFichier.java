@@ -13,7 +13,6 @@ public class LectureFichier {
 
 	public static void main(String[] args) throws IOException {
 		
-//		List<Ville> villes = new ArrayList<Ville>();
 		List<Ville> villes = new ArrayList<Ville>();
 		
 		Path path = Paths.get("C:/Users/maxen/Documents/recensement.csv");

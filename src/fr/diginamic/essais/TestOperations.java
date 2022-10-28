@@ -4,7 +4,7 @@ import fr.diginamic.operations.Operations;
 
 public class TestOperations {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		System.out.println(Operations.calcul(4,8,'+'));
 		System.out.println(Operations.calcul(12,5,'-'));
