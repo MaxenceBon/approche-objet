@@ -16,7 +16,7 @@ public class TestReflectionUtils {
 			e.printStackTrace();
 		} catch (ReflectionException e) {
 			// TODO Auto-generated catch block
-			System.err.println(e.getMessage());;
+			System.err.println(e.getMessage());
 		}
 	}
 
