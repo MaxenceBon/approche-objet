@@ -23,6 +23,8 @@ public class TestListeString {
 				plusGrand = villes.get(i);
 			}
 		}
+		
+		System.out.println(plusGrand);
 
 		for (int i = 0; i < villes.size(); i++) {
 			villes.set(i, villes.get(i).toUpperCase());

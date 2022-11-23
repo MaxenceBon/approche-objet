@@ -1,4 +1,4 @@
-package fr.diginamic.listes;
+package listes;
 
 import java.util.ArrayList;
 import java.util.Collections;

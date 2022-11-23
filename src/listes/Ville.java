@@ -14,10 +14,10 @@ public class Ville implements Comparable<Ville>{
 		this.setContinent(continent);
 	}
 	
-//	public Ville(String nom, int nbHabitant) {
-//		this.nom=nom;
-//		this.nbHabitants=nbHabitant;
-//	}
+	public Ville(String nom, int nbHabitant) {
+		this.nom=nom;
+		this.nbHabitants=nbHabitant;
+	}
 
 	public String toString() {
 		return " Ville : " + nom + ", nombre d'habitants : " + nbHabitants+", Continent : "+continent;
