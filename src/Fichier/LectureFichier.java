@@ -15,7 +15,7 @@ public class LectureFichier {
 		
 		List<Ville> villes = new ArrayList<Ville>();
 		
-		Path path = Paths.get("C:/Users/maxen/Documents/recensement.csv");
+		Path path = Paths.get("recensement.csv");
 		List<String> lignes = Files.readAllLines(path, StandardCharsets.UTF_8);
 			for (int i = 0; i < lignes.size(); i++) {
 				String[] tokenString = lignes.get(i).split(";");
